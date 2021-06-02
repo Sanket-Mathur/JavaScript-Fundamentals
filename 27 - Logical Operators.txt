@@ -1,0 +1,5 @@
+AND - &&
+Both expression should be true only then the result will be true, otherwise false.
+
+OR - ||
+Any one expression can be true for it to result true. False if all the expressions are false.

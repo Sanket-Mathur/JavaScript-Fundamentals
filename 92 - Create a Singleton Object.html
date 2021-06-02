@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Create a Singleton Object</title>
+        <script>
+            // Object which is defined only once in our script
+            var blogpost = new function() {
+                this.title = "Ruby on rails";
+                this.text = "Rapid web develpoment";
+                this.displayDetails = function() {
+                    document.write(this.title + "<br>");
+                    document.write(this.text + "<br>");
+                }
+            };
+
+            blogpost.displayDetails();
+        </script>
+    </head>
+</html>

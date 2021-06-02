@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Alpha Numeric Validation</title>
+        <script>
+            function validate() {
+                var exp = /^[A-Za-z0-9\s]+$/;
+                var address = document.myform.address.value;
+                var result = exp.test(address);
+
+                if(result) {
+                    alert("Validation Successful");
+                    return true;
+                } else {
+                    document.getElementById("err").innerHTML = "Please enter aplha numeric values only";
+                    document.myform.address.focus();
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>User Registration:</h3>
+        <form name="myform" action="registration.jsp" onsubmit="return validate()">
+            Address: <textarea name="address"></textarea>
+            <strong id="err"></strong><br>
+            <input type="submit" value="register">
+        </form>
+    </body>
+</html>

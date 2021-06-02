@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Local and Global</title>
+        <script>
+            var y = 30;
+            function fun1() {
+                var x = 20;
+                document.write("Inside fun1 x: " + x + "<br>");
+                document.write("Inside fun1 y: " + y + "<br>");
+            }
+            fun1();
+            // document.write("Outside fun1 x: " + x + "<br>"); // causes error
+            document.write("Outside fun1 y: " + y + "<br>");
+        </script>
+    </head>
+</html>

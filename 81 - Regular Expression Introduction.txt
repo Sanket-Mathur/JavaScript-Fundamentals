@@ -1,0 +1,6 @@
+Using regex, we can define a pattern and check if the user is giving the input in that pattern.
+
+var pattern = /pattern/attributes;
+var pattern = new RegExp(pattern, attributs);
+
+pettern.test("");

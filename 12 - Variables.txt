@@ -1,0 +1,20 @@
+Variables are used to store and retrive the data in the program
+They act as a container of the data
+
+Premitive Data types
+- Number
+- String
+- Booloan
+
+"var" keyword is used to declare variables and JS dynamically set the datatype at the run time
+
+It supports two other datatypes
+- Null 
+- Undefined
+
+Naming conventions:
+- Can start with "_" or alphabet
+- Case sensitive
+- Reserved keywords cannot be used as variable names
+
+It also support composed datatype called as "Object"

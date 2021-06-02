@@ -1,0 +1,6 @@
+In JavaScript, unlike other programming language, putting a semicolon is not a necessary condition.
+The code will work with and without semicolons
+
+Semicolons become necessary when multiple lines of code in a single line 
+
+It is a good practice to use semicolon to increase the readability.

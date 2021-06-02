@@ -1,0 +1,5 @@
+DOM - Document Object Model
+
+eg. document.getElementById("myId")
+    document.getElementByTagName("myTag")
+    document.getElementsByClassName("myClass")

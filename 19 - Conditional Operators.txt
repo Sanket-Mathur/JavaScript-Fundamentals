@@ -1,0 +1,15 @@
+x = 10
+
+Operator    Condition    Result
+   ==        x==10        true
+             x=="10"      true
+   ===       x===10       true
+             x==="10"     false
+   !=        x!=10        false 
+             x!="10"      false
+   !==       x!==10       false 
+             x!=="10"     true
+   <         x<10         false 
+   <=        x<=10        true 
+   >         x>10         false
+   >         x>=10        true

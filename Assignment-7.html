@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment - 7</title>
+        <script>
+            function handleOnKeyUp(x) {
+                x.style.color = "yellow";
+                x.style.backgroundColor = "blue";
+            }
+            function handleOnKeyDown(x) {
+                x.style.color = "black";
+                x.style.backgroundColor = "white";
+            }
+            function handleOnKeyPress() {
+                var display = document.getElementById('display');
+                display.innerHTML = "Typing...";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" onkeydown="handleOnKeyUp(this)" onkeyup="handleOnKeyDown(this)" onkeypress="handleOnKeyPress()">
+        <p id="display"></p>
+    </body>
+</html>

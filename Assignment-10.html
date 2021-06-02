@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment - 10</title>
+        <script>
+            function Product(id, name, description, price) {
+                this.id = id;
+                this.name = name;
+                this.description = description;
+                this.price = price;
+                this.displayProductDetails = displayProductDetails;
+                this.calculateDisc = calculateDisc;
+            }
+
+            function displayProductDetails() {
+                document.write("ID: " + this.id + "<br>");
+                document.write("Name: " + this.name + "<br>");
+                document.write("Description: " + this.description + "<br>");
+                document.write("Price: " + this.price + "<br>");
+                this.calculateDisc(40);
+            }
+
+            function calculateDisc(percentage) {
+                var newPrice = this.price * (100 - percentage) / 100;
+                document.write("Discounted Price: " + newPrice + "<br>");
+            }
+
+            p1 = new Product(215, "Mobile", "A smart phone", 10000);
+            p1.displayProductDetails();
+        </script>
+    </head>
+</html>

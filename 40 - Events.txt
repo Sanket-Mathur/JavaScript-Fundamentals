@@ -1,0 +1,3 @@
+Events are fired by either the browser or the user when he interacts with the elements.
+
+eg. onload, onfocus, onclick

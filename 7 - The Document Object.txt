@@ -1,0 +1,4 @@
+"document" is a JavaScript object (everything in JS is represented by Objects).
+"document" represent the current document loaded in the web browser and we can use it to access or write to the current document.
+
+Browser window is represented by a object called "window".

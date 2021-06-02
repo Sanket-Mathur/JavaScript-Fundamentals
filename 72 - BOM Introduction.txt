@@ -1,0 +1,6 @@
+BOM gives us access to different functionality accosiated with the brower using objects.
+
+eg.
+Parent(Browser): window
+Functions: alert, confirm, prompt, setTimeout, setInterval
+Objects: location, screen, history, navigator

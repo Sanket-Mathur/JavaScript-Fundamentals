@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Validating Radio Buttons</title>
+        <script>
+            function validate() {
+                var valid = false;
+                var x = document.myform.paymentmethod;
+
+                for(var i = 0; i < x.length; ++i) {
+                    if(x[i].checked) {
+                        valid = true;
+                        break;
+                    }
+                }
+
+                if(valid) {
+                    alert("Validation Successful");
+                    return true;
+                } else {
+                    alert("Please select a mode of payment");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Select a Payment mode:</h3>
+        <form name="myform" action="registration.jsp" onsubmit="return validate()">
+            <input type="radio" name="paymentmethod" value="cod">Cash On Delivary
+            <input type="radio" name="paymentmethod" value="credit">Credit Card
+            <input type="radio" name="paymentmethod" value="debit">Debit Card
+            <input type="submit" value="register">
+        </form>
+    </body>
+</html>

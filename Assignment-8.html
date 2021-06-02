@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment - 8</title>
+        <script>
+            function handleAdd() {
+                var parent = document.getElementById("products");
+
+                var child = document.createElement("p");
+                var bold = document.createElement("strong");
+                var name = document.createTextNode("TV:");
+                var price = document.createTextNode(" 4000$");
+                bold.appendChild(name);
+                child.appendChild(bold);
+                child.appendChild(price);
+
+                parent.appendChild(child);
+            }
+            function handleDelete() {
+                var parent = document.getElementById("products");
+                var child = document.getElementById("cell");
+
+                parent.removeChild(child);
+            }
+        </script>
+    </head>
+    <body>
+        <div id="products">
+            <p id="laptop"><strong>Laptop:</strong> 1000$</p>
+            <p id="cell"><strong>Cellphone:</strong> 300$</p>
+        </div>
+        <input type="button" value="ADD" onclick="handleAdd()">
+        <input type="button" value="DELETE" onclick="handleDelete()">
+    </body>
+</html>

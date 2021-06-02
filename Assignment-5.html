@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf=8">
+        <title>Assignment - 5</title>
+        <script>
+            function gradeCalc() {
+                var mathMarks = parseInt(prompt("Enter marks in Maths"));
+                var chemMarks = parseInt(prompt("Enter marks in Chemistry"));
+                var phyMarks = parseInt(prompt("Enter marks in Physics"));
+
+                var average = (mathMarks + chemMarks + phyMarks) / 3;
+
+                if(average < 70) {
+                    document.write("C Grade");
+                } else if(average < 90) {
+                    document.write("B Grade");
+                } else {
+                    document.write("A Grade");
+                }
+            }
+
+            gradeCalc();
+        </script>
+    </head>
+</html>

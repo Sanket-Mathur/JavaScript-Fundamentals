@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment - 4</title>
+        <script>
+            var n = prompt("Enter a number");
+
+            document.write("Using for loop<br>");
+            for(var i = 1; i <= n; ++i) {
+                if(i % 3 == 0) {
+                    continue;
+                }
+                document.write("i: " + i + "<br>");
+            }
+
+            document.write("Using while loop<br>");
+            var i = 1;
+            while(i <= n) {
+                if(i % 3 == 0) {
+                    ++i;
+                    continue;
+                }
+                document.write("i: " + i + "<br>");
+                ++i;
+            }
+
+            document.write("Using do-while loop<br>");
+            var i = 1;
+            do {
+                if(i % 3 == 0) {
+                    ++i;
+                    continue;
+                }
+                document.write("i: " + i + "<br>");
+                ++i;
+            } while(i <= n);
+        </script>
+    </head>
+</html>

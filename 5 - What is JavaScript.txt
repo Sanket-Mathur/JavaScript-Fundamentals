@@ -1,0 +1,13 @@
+JavaScript is a lightweight, dynamic and un-typed scripting language.
+
+It supports both functional and object oriented principles.
+
+JavaScript can be used for:
+Handle Events
+Validate
+Send Requests
+Receive Requests
+Process Response
+Dynamically update the HTML
+
+The standard is maintained by www.ecmascript.org

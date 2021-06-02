@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>On Change</title>
+        <style>
+            body {
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+        <script>
+            function handleOnChangeEvent(x) {
+                document.body.style.backgroundImage = "url('" + x.value + "')";
+            }
+        </script>
+    </head>
+    <body>
+        <select onchange="handleOnChangeEvent(this)">
+            <option value="">Select a Background</option>
+            <option value="Images/1.jpeg">Background 1</option>
+            <option value="Images/2.jpeg">Background 2</option>
+            <option value="Images/3.jpeg">Background 3</option>
+        </select>
+    </body>
+</html>

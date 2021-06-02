@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>If Else Ladder</title>
+        <script>
+            var jsmarks = parseInt(prompt("Please enter the JavaScript Marks"));
+            var javamarks = parseInt(prompt("Please enter the Java Marks"));
+            var dotnetmarks = parseInt(prompt("Please enter the .NET Marks"));
+
+            var total = jsmarks + javamarks + dotnetmarks;
+            document.write("Total Marks: " + total + "<br>");
+
+            var average = total / 3;
+            document.write("Average: " + average + "<br>");
+
+            if(jsmarks >= 35 && javamarks >= 35 && dotnetmarks >= 35) {
+                if(average >= 35 && average < 60) {
+                    document.write("Grade: C");
+                } else if(average >= 60 && average < 70) {
+                    document.write("Grade: B");
+                } else {
+                    document.write("Grade: A");
+                }
+            } else {
+                document.write("Result: Failed")
+            }
+        </script>
+    </head>
+</html>

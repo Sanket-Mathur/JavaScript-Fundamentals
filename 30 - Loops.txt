@@ -1,0 +1,7 @@
+Loops help us iterate or execute the same statement multiple amount of times.
+
+Types of loops in JS
+- for
+- while
+- do-while 
+- for-in

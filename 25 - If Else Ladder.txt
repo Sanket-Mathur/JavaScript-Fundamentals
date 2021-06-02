@@ -1,0 +1,9 @@
+This is used when we have to check multiple conditions sequentially.
+
+if(statement 1) {
+    ...
+} else if(statement 2) {
+    ...
+} else {
+    ...
+}

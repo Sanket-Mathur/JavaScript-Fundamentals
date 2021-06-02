@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Validating Number</title>
+        <script>
+            function validate() {
+                var x = document.myform.number.value;
+                
+                if(isNaN(x) || x < 1 || x > 10) {
+                    alert("Please enter a valid number between 1-10");
+                    document.myform.number.focus();
+                    return false;
+                }
+                alert("Validation Successful");
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Enter a number from 1-10:</h3>
+        <form name="myform" action="registration.jsp" onsubmit="return validate()">
+            Number: <input type="number" name="number">
+            <input type="submit" value="register">
+        </form>
+    </body>
+</html>
